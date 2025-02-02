@@ -1,4 +1,4 @@
-Quiz App Project
+# Quiz App Project
 
 
 
@@ -24,19 +24,19 @@ This interactive quiz application is built using HTML, CSS, and JavaScript. It f
 
 1. Clone the repository:
 
-   bash
+   ```bash
 
-   git clone : https://github.com/Harinipugal/ultimate-quiz-app.git
-
+   git clone https://github.com/Harinipugal/ultimate-quiz-app.git
+   ```
    
 
 2. Navigate to the project directory:
 
-   bash
+   ```bash
 
-   cd : ultimate-quiz-app
+   cd ultimate-quiz-app
 
-   
+   ```
 
 3. Open index.html in your web browser to start the quiz.
 
@@ -54,7 +54,7 @@ This interactive quiz application is built using HTML, CSS, and JavaScript. It f
 
 ## API Integration
 
-This project uses [opentdb.com(https://opentdb.com/api.php?amount=10&type=multiple)] for fetching quiz questions. Ensure that the API endpoint is active and accessible for proper functionality.
+This project uses [opentdb.com](https://opentdb.com/api.php?amount=10&type=multiple) for fetching quiz questions. Ensure that the API endpoint is active and accessible for proper functionality.
 
 
 

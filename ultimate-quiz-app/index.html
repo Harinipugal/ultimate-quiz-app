@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assests/image.jpg" type="image/jpg" >
+    <title>Quiz App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-title">
+            <h1 class="glow-text"> Quiz App</h1>
+            <div class="energy-ball"></div>
+        </div>
+
+        <div class="game-header">
+            <div class="stats">
+                <div class="streak-counter">
+                    <span>🔥</span>
+                    <span id="streak">0</span>
+                </div>
+                <div class="points">
+                    <span>💎</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="timer">
+                    <span>⏱️</span>
+                    <span id="time">30s</span>
+                </div>
+            </div>
+            <div class="level-progress">
+                <div class="level-text">Level 1</div>
+                <div class="xp-bar">
+                    <div class="xp-fill"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-box">
+            <div class="question-header">
+                <div class="question-number">Question 1/10</div>
+                <div class="difficulty">Medium</div>
+            </div>
+
+            <div id="question"></div>
+
+            
+
+            <div id="options"></div>
+            <div id="feedback" class="feedback"></div>
+            <button id="next-btn" style="display: none;">Next Question</button>
+            <div class="powerups">
+                <button class="powerup fifty-fifty" title="Remove two wrong answers">
+                    <span class="powerup-icon">✂️</span>
+                    <span class="powerup-count">2</span>
+                </button>
+                <button class="powerup time-freeze" title="Freeze timer for 5 seconds">
+                    <span class="powerup-icon">❄️</span>
+                    <span class="powerup-count">1</span>
+                </button>
+                <button class="powerup hint" title="Get a hint">
+                    <span class="powerup-icon">💡</span>
+                    <span class="powerup-count">3</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for correct answers -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="correct-answer-modal" id="correctModal">
+        <div class="modal-content">
+            <h2 class="modal-title">🎉 Correct Answer!</h2>
+            <p class="modal-message">Great job! Keep up the excellent work!</p>
+            <button class="modal-close" id="modalClose">Continue</button>
+        </div>
+    </div>
+
+    <div class="result-container">
+        <h2 class="result-header">Quiz Complete! 🎉</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="score-value">0</div>
+                <div class="stat-label">Points</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="time-value">0:00</div>
+                <div class="stat-label">Time</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="streak-value">0</div>
+                <div class="stat-label">Best Streak</div>
+            </div>
+        </div>
+        <div class="action-buttons">
+            <button id="retry-btn" class="action-btn">
+                <span>🔄</span> Try Again
+            </button>
+            <button id="share-btn" class="action-btn secondary">
+                <span></span> Share Score
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

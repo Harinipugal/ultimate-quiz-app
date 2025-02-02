@@ -26,7 +26,7 @@ This interactive quiz application is built using HTML, CSS, and JavaScript. It f
 
    bash
 
-   git clone https://github.com/Harinipugal/ultimate-quiz-app.git
+   git clone: https://github.com/Harinipugal/ultimate-quiz-app.git
 
    
 
@@ -34,7 +34,7 @@ This interactive quiz application is built using HTML, CSS, and JavaScript. It f
 
    bash
 
-   cd ultimate-quiz-app
+   cd :ultimate-quiz-app
 
    
 
